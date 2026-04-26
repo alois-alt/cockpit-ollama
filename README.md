@@ -2,6 +2,15 @@
 
 Plugin Cockpit pour gérer votre serveur Ollama et vos modèles IA directement depuis l'interface web de Cockpit.
 
+## Aperçu
+
+![Interface principale](images/screen-1.png)
+
+<p align="center">
+  <img src="images/screen-2.png" width="45%" />
+  <img src="images/screen-3.png" width="45%" /> 
+</p>
+
 ## Fonctionnalités
 
 - **Statut du serveur** : état de l'API Ollama + du service systemd, avec boutons Start/Stop
