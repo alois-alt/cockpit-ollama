@@ -1,0 +1,8 @@
+{
+    "version": 0,
+    "name": "ollama",
+    "menu": {
+        "index": { "label": "Ollama AI", "order": 90 }
+    },
+    "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self' ws: wss: http://localhost:11434; img-src 'self' data:; font-src 'self' data:"
+}
