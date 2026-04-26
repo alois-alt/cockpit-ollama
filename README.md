@@ -21,7 +21,7 @@ Plugin Cockpit pour gérer votre serveur Ollama et vos modèles IA directement d
 
 ```bash
 # Cloner/télécharger le projet
-git clone https://github.com/votre-repo/cockpit-ollama.git
+git clone https://github.com/alois-alt/cockpit-ollama.git
 cd cockpit-ollama
 
 # Installer (build + déploiement)
@@ -101,10 +101,20 @@ cockpit-bridge (tourne sur le serveur, authentifié via PAM)
 sudo bash uninstall.sh
 ```
 
+## Dépannage (Correction CSS)
+Si l'interface s'affiche sans mise en forme sur certains systèmes (comme Fedora), un fichier CSS indépendant est fourni. Exécutez la commande suivante :
+`sudo cp /usr/share/cockpit/ollama/repaire_index_css /usr/share/cockpit/ollama/index.css`
+
+
 ## Structure du projet
 
 ```
 cockpit-ollama/
+├── dist/
+│   ├── index.css             # Version valide du css
+│   ├── index.js              # Version valide du js
+│   ├── RedHat*.woff2         # Polices nécessaire pour cockpit 
+│   ├── repaire_index_css     # Fichier de reparation pour le css (cf: Dépannage (Correction CSS))
 ├── src/
 │   ├── index.js              # Point d'entrée React
 │   ├── App.jsx               # Composant racine
@@ -125,3 +135,9 @@ cockpit-ollama/
 ├── uninstall.sh
 └── README.md
 ```
+
+---
+## Remerciements (Collaboration)
+Ce projet est le fruit d'une collaboration entre un développeur humain et une IA :
+* **Claude (Anthropic)** : logique de base, composants React et architecture initiale.
+* **Gemini (Google)** : débogage, dépannage CSS et optimisation du déploiement.
