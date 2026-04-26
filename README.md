@@ -21,7 +21,6 @@ Plugin Cockpit pour gérer votre serveur Ollama et vos modèles IA directement d
 
 ## Prérequis
 
-- Debian 11/12/13 (ou dérivé)
 - Cockpit ≥ 275 installé : `sudo apt install cockpit`
 - Node.js ≥ 18 : `sudo apt install nodejs npm`
 - Ollama installé : `curl -fsSL https://ollama.com/install.sh | sh`
@@ -52,7 +51,7 @@ npm run build
 sudo mkdir -p /usr/share/cockpit/ollama
 
 # 4. Copier les fichiers
-sudo cp dist/index.js /usr/share/cockpit/ollama/
+sudo cp dist/* /usr/share/cockpit/ollama/
 sudo cp pkg/ollama/index.html /usr/share/cockpit/ollama/
 sudo cp pkg/ollama/manifest.json /usr/share/cockpit/ollama/
 
@@ -99,11 +98,6 @@ cockpit-bridge (tourne sur le serveur, authentifié via PAM)
     └──▶ systemctl is-active/start/stop ollama
 ```
 
-### Permissions
-
-- `systemctl start/stop` requiert `superuser: 'require'` → Cockpit demande le mot de passe sudo
-- La lecture de l'API Ollama ne requiert pas de privilèges élevés
-
 ## Désinstallation
 
 ```bash
@@ -123,7 +117,7 @@ cockpit-ollama/
 │   ├── index.css             # Version valide du css
 │   ├── index.js              # Version valide du js
 │   ├── RedHat*.woff2         # Polices nécessaire pour cockpit 
-│   ├── repaire_index_css     # Fichier de reparation pour le css (cf: Dépannage (Correction CSS))
+│   ├── repaire_index_css     # Fichier de reparation pour le css (cf: Dépannage - Correction CSS - )
 ├── src/
 │   ├── index.js              # Point d'entrée React
 │   ├── App.jsx               # Composant racine
