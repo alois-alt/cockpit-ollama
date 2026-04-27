@@ -21,6 +21,14 @@ Plugin Cockpit pour gérer votre serveur Ollama et vos modèles IA directement d
 - **Modèles actifs** : affichage des modèles chargés en mémoire avec timer de déchargement
 - **Sécurité** : validation stricte des noms de modèles, aucune injection shell possible
 
+## À qui s'adresse-t-il ?
+
+
+Ce plugin est destiné aux utilisateurs qui ont déjà installé Cockpit sur un serveur basé sur Debian/RHEL et qui souhaitent gérer Ollama sans passer par l'interface en ligne de commande (CLI).
+
+
+> Vous recherchez une interface web autonome ne nécessitant pas l'installation de Cockpit ? Découvrez plutôt [Open WebUI](https://github.com/open-webui/open-webui) : il s'exécute sous forme de conteneur Docker et fonctionne très bien pour les homelabs.
+
 ## Prérequis
 
 - Cockpit ≥ 275 installé : `sudo apt install cockpit`
