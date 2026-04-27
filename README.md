@@ -1,6 +1,6 @@
 # cockpit-ollama
 
-🇫🇷 [Français](README.md) | 🇬🇧 English
+🇫🇷 [Français](README.fr.md) | 🇬🇧 English
 
 A Cockpit plugin to manage your Ollama AI server and models directly from the Cockpit web interface.
 
